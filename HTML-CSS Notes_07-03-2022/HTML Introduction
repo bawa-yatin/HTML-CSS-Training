@@ -1,0 +1,414 @@
+Introduction to HTML:-
+
+HTML stands for Hyper Text Markup Language and is the standard markup language for which is used for creating attractive web pages with the help of styling. With the help of HTML, we can only create static web pages. In order to make it functional or dynamic in nature we make use of JavasScript. HTML describes the structure of a Web page and can consists a series of elements. HTML elements basically tells the browser how to display the content. The latest version of HTML is HTML5. Consider the example below:-
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web page title</title>
+</head>
+
+<body>
+    <h1>My First Heading</h1>
+    <p>This is some demo content.</p>
+</body>
+
+</html>
+
+Explanation of above example:-
+
+a) <!DOCTYPE>: It defines the document type and tells the browser about the version of HTML.
+
+b) <html > :This tag informs the browser that it is an HTML document and acts as a container for all the HTML elements. Text between html tag describes the web document.
+
+c) <head>: It is the first element inside the <html> element, which contains the metadata(information about the document). It must be closed before the body tag opens.
+
+d) <title>: It is used to add title of that HTML page which appears at the top of the browser window. It must be placed inside the head tag and should close immediately.
+
+e) <body> : Text between body tag describes the content of the page that will be visible to the end user. This tag contains the main content of the HTML document.
+
+f) <h1> : These are heading tags which we can display on our webpage. HTML headings are defined with the <h1> to <h6> tags. <h1> defines the most important heading. <h6> defines the least important heading.
+
+g) <p> : The HTML <p> element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+
+Many new elements are added in HTML5 like nav, audio, figcaption, progress, command, time, datalist, video, figure, meter, data, section, time, aside, canvas, summary, rp, rt, details, wbr, header, footer, keygen, embed, article etc.
+
+Difference between HTML and HTML5:-
+
+1) HTML didn’t support audio and video without the use of flash player support whereas HTML5 supports audio and video controls with the use of <audio> and <video> tags.
+2) HTML does not allow JavaScript to run in browser whereas HTML5 Allows JavaScript to run in background.This is possible due to JS Web worker API in HTML5.
+3) HTML uses cookies to store temporary data whereas HTML5 uses SQL databases and application cache to store offline data which is a much more secure approachs.
+4) It is not possible to draw shapes like circle, rectangle, triangle etc in HTML whereas HTML5 allows to draw shapes like circle, rectangle, triangle etc through new introduced HTML5 elements.
+5) Older version of HTML are less mobile-friendly whereas HTML5 language is more mobile-friendly.
+
+Types of HTML ELements:-
+
+An HTML file is basically a collection of elements which are responsible for creating web pages and define content in that webpage. An element in HTML usually consist of a start tag <tag name>, close tag </tag name> and content inserted between them. We have 3 types of HTML elements:-
+
+a) Block-level element:- A block-level element always start with new line and takes the full width of web page. These elements are responsible for structuring the main part of the web page by dividing the page into blocks. Some of the commonly used block-level elements include "<address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>-<h6>, <header>, <hr>, <li>, <main>, <nav>, <section>, <table>, <tfoot>, <ul> and <video>". Example:- 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div style="background-color: red">My first div.</div>
+    <div style="background-color: yellow">My second div</div>
+    <!-- style attribute is used for styling the HTML content. -->
+    <p style="background-color: orange">This is a block level element</p>
+</body>
+
+</html>
+
+b) Inline Elements:- These elements does not start with new line and take width as per requirement and are mostly used with other elements. Some of the commonly used inline elements include "<a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <dfn>, <em>, <i>, <img>, <input>, <kbd>, <label>,<script>, <select>, <small>, <span>, <strong>, <sub>, <sup>, <textarea>, <time>". Example:-
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <!-- href attribute is used to specify the link of the page on
+    which user should be redirected after clicking. -->
+    <a href="https://www.google.com/">Go to Google</a>
+    <span style="background-color: brown">This is an inline element.</span>
+</body>
+
+</html>
+
+c) Void Elements- These elements do not have a closing tag and also no content can be embedded inside them. Some of the commonly used void elements include <br> (represents a line break) , <hr>(represents a horizontal line) etc.
+
+HTML Tags:-
+
+1) HTML Anchor Tag (<a>)- It defines a hyperlink that links one page to another page. It can create hyperlink to other web page as well as files, location, or any URL. The most important attribute of this tag is the "href" attribute which links one page or file with another.
+We also have an attribute known as "target" which we can use to open the linked page in another tab rather in the same tab. In order to acheive that we specify the value of "target" attribute as "_blank". Example:-
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p>Click on <a href="https://www.udemy.com/" target="_blank"> this-link </a>to go on home page of Udemy.</p>
+</body>
+
+</html>
+
+2) <b> Tag- This tag is responsible for making our text "bold", but the <b> tag should be used as a LAST resort when no other tag is more appropriate as per HTML5 specification. Example:-
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>This is plain text - <b>and this is bold text</b>.</p>
+</body>
+
+</html>
+
+3) <article> Tag- The <article> tag specifies independent, self-contained content. This tag is generally used on Forum post, Blog post, News story, comment etc. Also this element is a block-level element. Example:-
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Article Tag</title>
+</head>
+
+<body>
+
+    <article>
+        <h1>Most Popular Browsers</h1>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        <article>
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </article>
+
+</body>
+
+</html>
+
+4) Audio Tag- HTML audio tag is used to define sounds such as music and other audio clips. There are three supported file format for HTML 5 audio tag:-
+
+a) mp3
+b) wav
+c) ogg
+
+There are some attributes which we can mention along with our "audio" element. These include:-
+
+-> controls- It defines the audio controls which is displayed with play/pause buttons.
+-> autoplay- It specifies that the audio will start playing as soon as it is ready.
+-> loop- It specifies that the audio file will start over again, every time when it is completed.
+-> muted- It is used to mute the audio output.
+-> preload- It specifies the author view to upload audio file when the page loads.
+-> src- It specifies the source URL of the audio file.
+
+Example:-
+
+<!DOCTYPE >
+<html>
+
+<body>
+    <audio controls>
+      <source src="./audio/koyal.mp3" type="audio/mpeg" />
+      Your browser does not support the html audio tag.
+    </audio>
+</body>
+
+</html>
+
+5) Button Tag- The <button> tag is used to create a clickable button within HTML form on our webpage. We can put content like text or image within the <button>........</button> tag. We should always specify the type attribute for a <button> tag. HTML Button tag can be used inside and outside the form. If we use it inside the form, it works as the submit button. We can also use it as reset button. Some common attributes that can be specified with the "button" tag include:-
+
+-> autofocus- It specifies that a button should automatically get focus while the loading of the page.
+-> disabled- It specifies that a button shuld be disabled.
+-> name- It specifies the name of the button.
+-> type- It specifies the type of the button.
+-> value- It specifies the value of the button.
+
+Example:-
+
+<!DOCTYPE >
+<html>
+
+<body>
+    <form>
+        <button name="button" value="OK" type="button">Click Here</button>
+    </form>
+</body>
+
+</html>
+
+6) Canvas Tag- The HTML 5 <canvas> tag is used to draw graphics using scripting language like JavaScript. A canvas is a rectangle like area on an HTML page. The <canvas> element is only a container for graphics, we require a scripting language to draw graphics like paths, boxes, circles, text and add images. It is always necessary to specify the id attribute and the height & width attribute to define the size of the canvas. Example:-
+
+<!DOCTYPE >
+<html>
+
+<body>
+    <!-- border property in style attribute is used to draw a border
+    as by default canvas doesn't have one. -->
+    <canvas id="myCanvas" width="300" height="200" style="border: 2px solid">
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
+</body>
+
+</html>
+
+7) Figure Tag- For displaying images in our web page we already have an <img> tag but with <figure> tag we can handle a group of diagrams, photos etc. with some embedded content. You can also add a caption for the photo with the help of <figcaption> tag. Example:-
+
+<!DOCTYPE >
+<html>
+
+<body>
+    <p>This is a random image of a cube.</p>
+    <figure>
+        <img src="./images/img1.jpg" alt="Cube" />
+    </figure>
+</body>
+
+</html>
+
+8) Footer Tag- HTML <footer> tag is used to define a footer for a document or a section. It is generally used at the bottom of the page. A footer tag mostly contains information about author, contact, copyright, sitemap, back to top links etc. Example:-
+
+<!DOCTYPE >
+<html>
+
+<body>
+    <footer>
+        <p>Posted by: Admin</p>
+        <p>
+            Contact information:
+            <a href="mailto:admininfo1098@gmail.com">admininfo1098@gmail.com</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
+
+9) Header Tag- The <header> element represents a container for introductory content or a set of navigational links. A <header> element typically contains:
+
+-> one or more heading elements (<h1> - <h6>)
+-> logo or icon
+-> authorship information
+
+Example:-
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <header>
+        <h1>Main page heading here</h1>
+        <p>Posted by Peter Adams</p>
+    </header>
+</body>
+
+</html>
+
+10) <nav> tag- The <nav> tag defines a set of navigation links and is intended only for major block of navigation links. Example:-
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>The Nav Element</h1>
+
+    <nav>
+        <a href="#">HTML</a> | <a href="#">CSS</a> | <a href="#">JavaScript</a> |
+        <a href="#">Python</a>
+    </nav>
+</body>
+
+</html>
+
+11) <section> Tag- The HTML <section> tag is used to define sections in a document. When we put our content on a web page, it may contains many chapters, headers, footers, or other sections on a web page. HTML <section> is a new tag introduced in HTML5. Example:-
+
+<!DOCTYPE >
+<html>
+
+<body>
+    <h2>Indian Leaders</h2>
+    <section>
+        <h3>Jawaharlal Nehru</h3>
+        <p>
+            Jawaharlal Nehru was the first Prime Minister of India and a central figure in Indian politics for much of the 20th century.
+        </p>
+    </section>
+    <section>
+        <h3>Subhas Chandra Bose</h3>
+        <p>
+            Subhas Chandra Bose was an Indian nationalist whose attempt during World War II to rid India of British rule with the help of Nazi Germany and Japan left a troubled legacy.
+        </p>
+    </section>
+</body>
+
+</html>
+
+12) Video Tag- The HTML video tag is used for streaming video files such as a movie clip, song clip on the web page. There are three supported file format for HTML 5 vido tag:-
+
+a) mp4
+b) webM
+c) ogg
+
+There are some attributes which we can mention along with our "audio" element. These include:-
+
+-> controls- It defines the video controls which is displayed with play/pause buttons.
+-> autoplay- It specifies that the video will start playing as soon as it is ready.
+-> loop- It specifies that the video file will start over again, every time when it is completed.
+-> muted- It is used to mute the video output.
+-> preload- It specifies the author view to upload video file when the page loads.
+-> src- It specifies the source URL of the video file.
+-> height- It is used to set the height of the video player.
+-> width- It is used to set the width of the video player.
+
+13) New HTML5 Input Types
+
+a) Input Type Color- The color input type allows the user to select a color from a color picker and returns the color value in hexadecimal format (#rrggbb). If you don't specify a value, the default is #000000, which is black.
+
+b) Input Type Date- The date input type allows the user to select a date from a drop-down calendar. The date value includes the year, month and day.
+
+c) Input Type Datetime-local- The datetime-local input type allows the user to select both local date and time, including the year, month, and day as well as the time in hours and minutes.
+
+d) Input Type Email- The email input type allows the user to enter e-mail address. It is used in with an important attribute i.e "required" which makes it mandatory for the user to enter an email address and that to in a proper manner.
+
+e) Input Type Month- The month input type allows the user to select a month and year from a drop-down calendar. The value is a string in the format "YYYY-MM", where YYYY is the four-digit year and MM is the month number.
+
+f) Input Type Number- The number input type can be used for entering a numerical value. You can also restrict the user to enter only acceptable values using the additional attributes min, max, and step.
+
+g) Input Type Range- The range input type can be used for entering a numerical value within a specified range.
+
+h) Input Type Search- The search input type can be used for creating search input fields.
+
+i) Input Type Tel- The tel input type can be used for entering a telephone number.
+
+j) Input Type Time- The time input type can be used for entering a time (hours and minutes).
+
+k) Input Type URL- The url input type can be used for entering URL's or web addresses. We can use the multiple attribute to enter more than one URL. Also, if "required" attribute is specified browser will automatically carry out validation to ensure that only text that matches the standard format for URLs is entered into the input box.
+
+l) Input Type Week- The week input type allows the user to select a week and year from a drop-down calendar.
+
+Example:- 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML5 Input Types</title>
+</head>
+
+<body>
+    <form>
+        <label for="mycolor">Select Color:</label>
+        <input type="color" value="#00ff00" id="mycolor" />
+
+        <br /><br />
+
+        <label for="mydate">Select Date:</label>
+        <input type="date" value="2019-04-15" id="mydate" />
+
+        <br /><br />
+
+        <label for="mydatetime">Choose Date and Time:</label>
+        <input type="datetime-local" id="mydatetime" />
+
+        <br /><br />
+
+        <label for="myemail">Enter Email Address:</label>
+        <input type="email" id="myemail" required />
+
+        <br /><br />
+
+        <label for="mymonth">Select Month:</label>
+        <input type="month" id="mymonth" />
+
+        <br /><br />
+
+        <label for="mynumber">Enter a Number:</label>
+        <input type="number" min="1" max="10" step="0.5" id="mynumber" />
+
+        <br /><br />
+
+        <label for="mynumber">Select a Number:</label>
+        <input type="range" min="1" max="10" step="0.5" id="mynumber" />
+
+        <br /><br />
+
+        <label for="mysearch">Search Website:</label>
+        <input type="search" id="mysearch" />
+
+        <br /><br />
+
+        <label for="myphone">Telephone Number:</label>
+        <input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required />
+
+        <br /><br />
+
+        <label for="mytime">Select Time:</label>
+        <input type="time" id="mytime" />
+
+        <br /><br />
+
+        <label for="myurl">Enter Website URL:</label>
+        <input type="url" id="myurl" required />
+
+        <br /><br />
+
+        <label for="myweek">Select Week:</label>
+        <input type="week" id="myweek" />
+    </form>
+</body>
+
+</html>
