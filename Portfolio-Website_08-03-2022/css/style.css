@@ -1,0 +1,170 @@
+body {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background: #191919;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Homepage Styles(index.html) */
+
+
+/* Navbar Styles */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    z-index: 1;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item a {
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 35px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    opacity: 1;
+}
+
+
+/* Welcome Section Styles */
+
+.welcome-section {
+    height: 100%;
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-heading {
+    color: #fff;
+    font-size: 90px;
+    text-transform: capitalize;
+    font-weight: 300;
+    z-index: 1;
+    margin: 15px 0;
+}
+
+.welcome-content {
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 15px 0;
+    z-index: 1;
+    width: 70%;
+}
+
+.welcome-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+
+/* Project Page Styles(projects.html) */
+
+#project-section {
+    position: absolute;
+    top: 65px;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-tile {
+    margin: 10px;
+    max-width: 250px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile .project-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-tile .project-name {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* Contact Page Styles(contact.html) */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: gray;
+}
+
+.contact-title {
+    font-size: 70px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.contact-subtitle {
+    font-style: italic;
+    margin: 15px 10px 25px;
+    font-size: 25px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details {
+    transition: transform 0.3s ease-out;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 30px;
+    font-size: 27px;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
