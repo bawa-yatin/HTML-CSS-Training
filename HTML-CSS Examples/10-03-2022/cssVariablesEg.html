@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables Example</title>
+
+    <style>
+         :root {
+            --bg-color: lightgray;
+            --border-color: 2px solid;
+            --padding-value: 20px;
+        }
+        /* To use the custom properties defined, we use var() function */
+        
+        .container {
+            background-color: var(--bg-color);
+            border: var(--border-color);
+            padding: var(--padding-value);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Demo Heading</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum saepe dicta quos deleniti dignissimos laborum asperiores quaerat placeat, nam fugit eligendi? Nihil sed, nostrum iusto nisi dolores accusantium nulla. Adipisci.
+        </p>
+    </div>
+</body>
+
+</html>

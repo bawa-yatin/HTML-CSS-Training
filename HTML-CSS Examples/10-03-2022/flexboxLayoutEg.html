@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout Example</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 200px;
+            background-color: rgb(216, 219, 38);
+        }
+        
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div style="flex-grow: 5">1</div>
+        <div style="align-self: center">2</div>
+        <div>3</div>
+        <div style="align-self: flex-start">4</div>
+        <div>5</div>
+        <div style="align-self: flex-end">6</div>
+    </div>
+</body>
+
+</html>
