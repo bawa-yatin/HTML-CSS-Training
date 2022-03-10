@@ -100,10 +100,10 @@ body {
     opacity: 0.2;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 800px) {
+@media screen and (max-width: 1024px) and (min-width: 796px) {
     .welcome-img {
         width: 470px;
-        height: 470px;
+        height: 490px;
     }
     .welcome-text {
         padding: 0 25px;
