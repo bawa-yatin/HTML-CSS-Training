@@ -1,0 +1,17 @@
+#sidebar {
+    float: left;
+    width: 25%;
+    background-color: rgb(119, 137, 143);
+    padding: 30px 10px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 6px;
+        margin-bottom: 10px;
+        background-color: #10A2FF;
+        color: #ffffff;
+    }
+}
